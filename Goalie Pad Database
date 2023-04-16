@@ -1,0 +1,12 @@
+CREATE TABLE goalie_pads(id integer primary key, name text, size integer, color text, flex integer);
+INSERT INTO goalie_pads VALUES
+(1,'gnetik 5',33,'royal blue',5),
+(2,'optik 2',34,'black',2),
+(3,'v9',32,'red',5),
+(4,'v10',34,'navy',4),
+(5,'G6',35,'white',2),
+(6,'PX3',36,'black',3),
+(7,'12.2',35,'navy',4);
+Select name, size, flex from goalie_pads
+WHERE size >32
+ORDER BY flex asc;
